@@ -1,0 +1,18 @@
+.header{
+    background: rgb(22, 22, 22);
+}
+
+.name {
+    font-size: 2cm;
+    font-weight: lighter;
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+    letter-spacing: -2px; 
+    color: rgb(243, 234, 234);
+
+}
+
+.scroll_down {
+    color: rgb(49, 48, 48);
+    padding-bottom: 3rem;
+}
