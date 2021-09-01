@@ -7,6 +7,9 @@ function App() {
     <div className="App">
       
       <Header />
+      <h1>
+        second part
+      </h1>
     </div>
   );
 }

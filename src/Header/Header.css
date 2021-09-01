@@ -14,5 +14,39 @@
 
 .scroll_down {
     color: rgb(49, 48, 48);
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
+
+
+.about {
+    background: rgb(22, 22, 22);
+    margin-top: 1rem;
+}
+
+.about_div {
+    width: 25rem;
+    font-weight: normal;
+    background: rgb(22, 22, 22);
+}
+
+.about_div_1 {
+    margin-top: 0.5cm;
+    font-size: 2cm;
+    font-weight: 300;
+    letter-spacing: -4px;
+    background: rgb(22, 22, 22);
+}
+
+.about_div_2 {
+    margin-top: 0.3cm;
+    font-size: 0.5cm;
+    letter-spacing: 2px;
+    font-weight: 300;
+    background: rgb(22, 22, 22);
+}
+
+.path {
+	stroke-dashoffset: 1000;
+	stroke-dasharray: 1000;
+}
+
