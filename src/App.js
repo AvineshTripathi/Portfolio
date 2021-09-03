@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header/Header';
+import SecondPart from './SecondPart/SecondPart';
 
 function App() {
   return (
     <div className="App">
       
       <Header />
-      <h1>
-        second part
-      </h1>
+      <SecondPart />
+      <div className="third">hhhhh</div>
     </div>
   );
 }

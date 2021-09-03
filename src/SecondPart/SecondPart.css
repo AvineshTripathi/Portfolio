@@ -1,0 +1,36 @@
+
+
+
+.main {
+    background: white;
+    margin: auto;
+    margin-top: -25.2rem;
+    height: 90rem;
+    width: 0.001rem;
+    z-index: 1;
+    opacity: 0;
+    animation: 1s;
+    transition: 0.3s;
+
+}
+
+
+.main_animation {
+    background: white;
+    margin: auto;
+    margin-top: -25.2rem;
+    opacity: 1;
+    width: 100rem;
+    height: 90rem;
+    z-index: 1;
+}
+
+.animation {
+  background: rgb(22, 22, 22);   
+  margin-top: -0.2rem;
+}
+
+.path3 {
+    stroke-dashoffset: 1000;
+	stroke-dasharray: 1000;
+}

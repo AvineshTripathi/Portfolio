@@ -5,15 +5,15 @@ function Header() {
         <div className="header">
             <div className="name">
                 Avinesh Tripathi
-                <div>world on war distancee</div>
+                <div>This is how Work should Flow</div>
             </div>
             <div className="scroll_down">
                 scroll down
             </div>
             <div className="svgg">
                 <svg height="900" width="1000" >
-                    <path className="path" d="M 500 100 L 500 400 C 500 800 100 700 50 900" stroke="white"
-                        stroke-width="2" fill="none" />
+                    <path className="path" d="M 500 100 L 500 400 C 500 800 100 700 50 900" 
+                    stroke="white" stroke-width="2" fill="none" />
                 </svg>
                 <div className="about">
                     <div className="about_div">
@@ -21,14 +21,16 @@ function Header() {
                             About
                         </div>
                         <div className="about_div_2">
-                            sfsdcc fsefsd fsjij djsgo ppps fijis efdhjh diicnm dfsdiji 
-                            idfiajija fiahsincan sdjshcnjia shiaisjjd aiijisjn 
+                            Work in progress
                         </div>
+                        <div className="about_div_2">You will see me flowing very soon</div>
+
                     </div>
                 </div>
                 <svg height="900" width="1000">
-                    <path className="path2" d="M 50 30 C 50 30 40 500 700 300" stroke="white" stroke-width="2" fill="none" />
-                </svg>
+                    <path className="path2" d="M 50 30 C 50 30 40 500 680 400 C 500 600 450 550 550 2000 " 
+                    stroke="white" stroke-width="2" fill="none" />
+                </svg>  
             </div>
         </div>
     );
@@ -40,7 +42,7 @@ $(document).ready(function() {
     //on a scroll event - execute function
     $(window).scroll(function() {
       //calculate how far down the page the user is 
-      var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 210);
+      var $percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 290);
       //convert dashoffset pixel value to interger
       var $newUnit = parseInt($dashOffset, 10);
       //get the value to be subtracted from the 'stroke-dashoffset'
@@ -50,14 +52,14 @@ $(document).ready(function() {
       
   });
   });
-/*
+
   $(document).ready(function() {
     //variable for the 'stroke-dashoffset' unit
     var $dash_Offset = $(".path2").css("stroke-dashoffset");
     //on a scroll event - execute function
     $(window).scroll(function() {
       //calculate how far down the page the user is 
-      var $percentage_Complete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 210);
+      var $percentage_Complete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 570);
       //convert dashoffset pixel value to interger
       var $new_Unit = parseInt($dash_Offset, 10);
       //get the value to be subtracted from the 'stroke-dashoffset'
@@ -67,6 +69,8 @@ $(document).ready(function() {
       
   });
   });
-  */
+
+
+  
 
 export default Header

@@ -1,5 +1,6 @@
 .header{
     background: rgb(22, 22, 22);
+    z-index: -1;
 }
 
 .name {
@@ -47,6 +48,11 @@
 
 .path {
 	stroke-dashoffset: 1000;
+	stroke-dasharray: 1000;
+}
+
+.path2 {
+    stroke-dashoffset: 1000;
 	stroke-dasharray: 1000;
 }
 
