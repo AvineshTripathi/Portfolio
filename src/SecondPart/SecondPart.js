@@ -1,5 +1,7 @@
 import './SecondPart.css';
 import $ from 'jquery';
+import Bounce  from 'react-reveal/Bounce';
+import Zoom from 'react-reveal/Zoom';
 
 function SecondPart() {
     return (
@@ -10,7 +12,38 @@ function SecondPart() {
                     </svg>
                 </div>
                 <div className="main">
-                    hellp
+                    <div class="part_title">
+                        <div class="part_title_left">
+                            <Bounce left delay={800}> 
+                                Contributions
+                            </Bounce>
+                        </div>
+                        <div class="part_title_right">
+                            <Bounce right delay={200}>
+                                Education
+                            </Bounce>
+                        </div>
+                    </div>
+                    <div class="part_mainbox">
+                        <div class="part_flexbox1">
+                            <div class="k8">
+                                <Zoom bottom cascade>
+                                    KUBERNETES
+                                </Zoom>
+                            </div>
+                            <div class="k8_details">
+                                <Zoom bottom delay={400}>
+                                <br></br>
+                                Joined the community from August 2021, Learning about kubernetes, exploring the community, contributing to K/website and other projects, part of APAC MoC Blog Series Team
+                                </Zoom>                       
+                            </div> 
+                            
+                        </div>
+                        <div class="part_flexbox2">
+                            hmmm
+                        </div>
+                    </div>
+
                 </div>
             </div>
     );

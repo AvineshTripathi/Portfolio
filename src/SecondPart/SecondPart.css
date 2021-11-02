@@ -11,7 +11,7 @@
     opacity: 0;
     animation: 1s;
     transition: 0.3s;
-
+    color: rgb(22, 22, 22);
 }
 
 
@@ -20,7 +20,7 @@
     margin: auto;
     margin-top: -25.2rem;
     opacity: 1;
-    width: 100rem;
+    width: 84rem;
     height: 90rem;
     z-index: 1;
 }
@@ -28,9 +28,48 @@
 .animation {
   background: rgb(22, 22, 22);   
   margin-top: -0.2rem;
+  z-index: -1;
 }
 
 .path3 {
     stroke-dashoffset: 1000;
 	stroke-dasharray: 1000;
+}
+
+.part_title {
+    display: flex;
+}
+.part_title_left {
+    font-weight: 200;
+    font-size: 2cm;
+    padding-top: 4rem;
+    margin-left: 7rem;
+}
+
+.part_title_right {
+    font-weight: 200;
+    font-size: 2cm;
+    padding-top: 4rem;
+    margin-left: 20rem;
+}
+
+
+.part_mainbox{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.part_flexbox1 {
+    width: 50%;
+
+}
+
+.k8 {
+   font-size: 1cm; 
+   font-weight: 200;
+}
+.part_flexbox2{
+    justify-content: right;
+    width: 50%;
 }
