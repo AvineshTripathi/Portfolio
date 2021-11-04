@@ -2,6 +2,7 @@ import './SecondPart.css';
 import $ from 'jquery';
 import Bounce  from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
+import Flip from 'react-reveal/Flip';
 
 function SecondPart() {
     return (
@@ -20,7 +21,7 @@ function SecondPart() {
                         </div>
                         <div class="part_title_right">
                             <Bounce right delay={200}>
-                                Education
+                                Status
                             </Bounce>
                         </div>
                     </div>
@@ -37,13 +38,31 @@ function SecondPart() {
                                 Joined the community from August 2021, Learning about kubernetes, exploring the community, contributing to K/website and other projects, part of APAC MoC Blog Series Team
                                 </Zoom>                       
                             </div> 
+                            <button class="button-81" role="button"><Flip top delay={500}>Repository</Flip></button>
                             
                         </div>
                         <div class="part_flexbox2">
-                            hmmm
+                            <div class="k8">
+                                <Zoom bottom cascade>
+                                    STUDENT
+                                </Zoom>
+                            </div>
+                            <div class="edu">
+                                <Zoom right cascade delay={400}>                            
+                                    <div>
+                                        <div class="edu_details">@Adani Institute Of Infrastructure Engineering</div>
+                                        <div class="edu_details">Doing my B.E in Information and Communication Technology</div>
+                                        <div class="edu_details"><b>Looking for Opportunities, exploring and learning</b></div>
+                                    </div>
+                                </Zoom>
+                            </div>
+                            <button class="button-81" role="button"><Flip top delay={500}>Resume</Flip></button>
                         </div>
                     </div>
 
+                    <div class="skillset">
+                        
+                    </div>
                 </div>
             </div>
     );
