@@ -1,39 +1,28 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
-export default function GithubApi() {
+export default function GithubApi () {
 
-    const [res, setres] = ""
-    const body = {
-        "query": `
-        query {
-            user(login: ${process.env.USERNAME}) {
-              followers {
-                totalCount
-              }
-              following {
-                totalCount
-              }
-            }
-          }
-        `
-    }
+    const [res, setres] = useState([])
 
-    const baseUrl = "https://api.github.com/graphql";
-    
+    const url = "https://api.github.com/users/AvineshTripathi"
+
     const headers = {
-        "Content-Type": "application/json",
-        Authorization: "bearer "+process.env.GITHUB
+      Authorization: `bearer ${process.env.GITHUB}`
     }
-
-    fetch(baseUrl, {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(body)
-    }).
-    then(response => setres(JSON.stringify(response)))
-    .catch(err => console.log(JSON.stringify(err)));
+    useEffect(() => {
+      axios.get(url, {
+        headers: headers
+      }).then(res => {
+        setres(res.data);
+      })
+    }, [])
+    
+    
     return (
-        res
+        <div>
+           Hi, {res}
+        </div>
     )
 }
 

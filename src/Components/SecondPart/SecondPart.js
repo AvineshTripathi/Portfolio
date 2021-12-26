@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Flip';
 import GithubApi from '../Github/GithubApi';
 
-function SecondPart() {
+function SecondPart(props) {
     return (
             <div className="second_main">
                 <div className="animation">
@@ -62,7 +62,7 @@ function SecondPart() {
                     </div>
 
                     <div class="skillset">
-                        {GithubApi}
+                        <GithubApi />
                     </div>
                 </div>
             </div>
