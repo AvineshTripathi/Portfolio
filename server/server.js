@@ -1,5 +1,8 @@
+import dotenv from 'dotenv' 
 import fetch from 'node-fetch';
-import express from "express"
+import express from "express";
+
+dotenv.config();
 
 var issue_assigned=""
 var arr = []  
@@ -23,7 +26,7 @@ fetch('https://api.github.com/graphql', {
   method: 'POST',
   body: JSON.stringify({query}),
   headers: {
-    Authorization: `Bearer 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`
+    Authorization: `Bearer ${process.env.TOKEN}`
   }
 })
   .then(res => res.text())
@@ -49,6 +52,7 @@ function getArr(issue_assigned){
       arr.push(fin)
     }    
   });
+  console.log(arr)
 }
 
 
