@@ -3,7 +3,7 @@ import $ from 'jquery';
 import Bounce  from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Flip';
-import GithubApi from '../Github/GithubApi';
+import GithubApi from '../Skills/Skills';
 
 function SecondPart(props) {
     return (
